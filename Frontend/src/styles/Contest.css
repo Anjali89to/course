@@ -1,0 +1,115 @@
+/* Achievements Section */
+.achievements {
+  background: linear-gradient(135deg, #eef2f3, #c6d8f3);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+/* Section Heading */
+.achievements h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Countdown Timer - Dark Blue Background & White Text */
+.countdown-timer {
+  background: #0a3d62; /* Dark Blue */
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* White Text */
+  display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Enrollment Text */
+.countdown-timer h3 {
+  color: #ffffff; /* White */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Marquee Effect */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Achievements Grid */
+.achievements-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Achievement Box */
+.achievement-box {
+  background: linear-gradient(145deg, #ffffff, #e3e8ef);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  min-width: 300px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.achievement-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-box {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}

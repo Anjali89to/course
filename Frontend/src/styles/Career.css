@@ -1,0 +1,51 @@
+.career-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Half Page Hero Section */
+.career-hero {
+  background-color: #007bff; /* Blue Background */
+  height: 50vh; /* Half Page Background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.career-hero .overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark Overlay */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Courses Section (Neeche Aayega) */
+.courses-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+  background-color: white; /* Pure White Background */
+}
+
+.course-box {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light Grey Box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-box p {
+  font-size: 16px;
+  color: #666;
+}

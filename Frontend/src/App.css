@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #003366;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #0071e3;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .cta-button {
+  background-color: #f4f4f4;
+  color: #0071e3;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero .cta-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Courses Section Styles */
+.courses {
+  display: flex;
+  justify-content: center;  /* Centers the courses horizontally */
+  align-items: center;      /* Centers the courses vertically */
+  flex-wrap: wrap;          /* Allows wrapping to next row if needed */
+  padding: 50px 60px;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+.course {
+  background-color: #f4f4f4;
+  padding: 30px;
+  width: 280px;             /* Fixed width for each course box */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;             /* Space between the boxes */
+  transition: transform 0.3s ease-in-out;
+}
+
+.course:hover {
+  transform: translateY(-10px);
+}
+
+.course h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.course p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.course .cta-button {
+  background-color: #003366;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.course .cta-button:hover {
+  background-color: #0057b8;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 30px 60px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer .footer-links {
+  margin-top: 20px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+.courses-section {
+  display: flex;
+  justify-content: center; /* Center align courses */
+  gap: 20px; /* Space between courses */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 20px;
+}
+
+.course-card {
+  width: 250px; /* Set a fixed width */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
