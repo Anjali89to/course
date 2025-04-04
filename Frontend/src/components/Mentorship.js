@@ -27,7 +27,7 @@ const Mentorship = () => {
     setErrorMessage("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/mentorship", {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/mentorship`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
