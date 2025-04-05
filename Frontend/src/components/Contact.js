@@ -21,8 +21,8 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      // Use the environment variable for the API URL
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/contact`, {
+      // Use the correct environment variable for the API URL
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
