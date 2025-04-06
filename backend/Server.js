@@ -1,22 +1,22 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const cors = require("cors"); // ✅ Import CORS
+const cors = require("cors");
 const connectDB = require("./config/db");
 const contactRoutes = require("./routes/contactRoutes");
 const mentorshipRoutes = require("./routes/mentorshipRoutes");
-
 
 dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors()); // ✅ Enable CORS
-app.use(express.json());
+app.use(cors());  // Enable CORS
+app.use(express.json());  // Parse incoming JSON requests
 
+// Use routes
 app.use("/api", contactRoutes);
 app.use("/api/mentorship", mentorshipRoutes);
 
-
+// Home Route
 app.get("/", (req, res) => {
   res.send("ThinkAcademies Backend Running!");
 });
