@@ -13,7 +13,7 @@ app.use(cors());  // Enable CORS
 app.use(express.json());  // Parse incoming JSON requests
 
 // Use routes
-app.use("/api", contactRoutes);
+app.use("/api", contactRoutes);  // Updated contact routes
 app.use("/api/mentorship", mentorshipRoutes);
 
 // Home Route
