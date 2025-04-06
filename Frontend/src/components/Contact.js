@@ -22,12 +22,12 @@ const Contact = () => {
 
     try {
       // Use the correct environment variable for the API URL
-      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/contact`, {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
+      
       const data = await response.json();
 
       if (data.success) {
